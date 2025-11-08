@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Open Sans";
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+/* NAVBAR */
+
+/* SETTING ALL NAVBAR HEADER*/
+.navbar{ 
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.746);
+    padding: 10px 10px;
+    align-items: center;
+    background-color: #D9D9D9;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    
+}
+
+/* UKURAN GAMBAR DI HEADER NAVBAR */
+.navbar-brand{
+    height: 50px;
+    width: auto;
+    padding-top: 5px;
+    
+}
+
+/* MENU DI NAVBAR */
+.navbar-nav{
+    text-align: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* TATA LETAK ISI NAVBAR */
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TEKS DI NAVBAR MENU */
+.nav-link{
+    font-size: 14px;
+    color: #828282;
+}
+
+/* RESPONSIF AGAR TEKS MENU NAVBAR BERUBAH WARNA KETIKA KURSOR MENGARAH */
+.nav-link:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* GARIS BAWAH DI ATAS MENU ITEM */
+.nav-link.active{
+    border-bottom:3px solid #595959;
+    position: relative;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height */
+    overflow: hidden; /* sembunyikan overflow jika ada */
+}
+
+.hero .container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 45, 45, 0.365); /* ubah 0.4 -> 0.6 kalau mau lebih gelap */
+}
+
+.hero-video{
+    position: absolute;
+    width: 115%;
+    height: 140%;
+    object-fit: contain; /* menampilkan seluruh video tanpa terpotong */
+    z-index: -1;
+    background: rgba(46, 46, 46, 0.765); /* ubah 0.4 -> 0.6 kalau mau lebih gelap */
+}
+
+/* Konten di atas video */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    /*diatasvideo*/color: white;
+    margin: 60 auto;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700PX;
+}
+
+.hero-content h1{
+    white-space: nowrap;
+    font-size: 23px;
+    align-items: center;
+    text-align: left;
+}
+
+.logo-desc{
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.logo-desc img{
+    max-width: 250px;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 0;
+
+}
+
+.logo-desc p{
+    font-size: 18px;
+    padding-left: 2px;
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.button-hero{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.btn-products {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    background-color:#D9D9D9 ;
+    color:  #262626;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.btn-products:hover{
+    color: #828282;
+}
+
+.btn-contact{
+    padding: 10px 12px 12px 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    background-color: #D9D9D9 ;
+    color:#262626 ;
+    font-size: 17px;
+    border-radius: 8px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover{
+    color: #828282;
+}
+
+header svg{
+    margin-bottom: -90px;
+}
+
+/* NAVBAR */
+
+/* SPECIALIZE SECTION */
+
+.specialization-section{
+    background-color:#F6FEFF ;
+    margin-top: -185px;
+    padding: 80px 0;
+}
+
+.content-wrapper {
+    display: flex; /* Mengaktifkan Flexbox untuk tata letak horizontal */
+    justify-content: space-between; /* Memberi jarak antar kotak/kolom */
+    gap: 20px; /* Jarak antara setiap elemen */
+    margin-top: 30px;
+}
+
+.box {
+    /* Setiap kotak mengambil sekitar 25% dari lebar wrapper */
+    flex-basis: 25%; 
+    height: 400px; 
+    border: 2px solid rgb(197, 197, 197); /* Border outline seperti di mockup */
+    /* Menambahkan border-radius untuk sudut yang lebih lembut */
+    border-radius: 8px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Pusat horizontal */
+    text-align: center;
+}
+
+/* Gaya untuk Ikon */
+.box i {
+    font-size: 3em; 
+    color: #262626; /* Warna ikon, sesuaikan! */
+    margin-top: 30px; 
+    margin-bottom:30px;
+}
+
+/* Gaya untuk Judul di Kotak */
+.box h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.box p{
+    font-size: 16px;
+    text-align: center;
+    color: #828282;
+}
+
+.container h2{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #666666;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+.specialization-section h2::before {
+    content: "";
+    display: block;
+    width: 600px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px; /* Ketebalan Garis */
+    background: #818080; /* Warna Garis */
+    margin-right: 20px; /* Jarak antara garis dan teks */
+}
+
+/* Garis Kanan (Menggunakan Pseudo-element ::after) */
+.specialization-section h2::after {
+    content: "";
+    display: block;
+    width: 600px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    height: 1px;
+    background: #818080;
+    margin-left: 20px; /* Jarak antara teks dan garis */
+}
+
+/* SPECIALIZE SECTION */
+
+/* YOUR BEST SOLUTION */
+
+.best-solution{
+    background-color:#F6FEFF ;
+    margin-top: 0px;
+    padding: 80px;
+}
+
+.solution-card {
+    display: block;
+    width: 180px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+    padding: 80 80 120 80;
+    filter: grayscale(0); /* normal berwarna */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
+}
+
+.solution-card:hover {
+    filter: grayscale(100%); 
+    transform: scale(1.05); /* sedikit membesar / timbul */
+    box-shadow: 0 8px 20px rgba(158, 158, 158, 0.608); /* efek timbul */
+}
+
+
+.solution-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    transform: skew(0deg);
+}
+
+.overlay :hover{
+    transform: translateY(-2px);
+}
+
+.solution-header h2{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #666666;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.solution-header h2::before {
+    content: "";
+    display: block;
+    width: 500px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px; /* Ketebalan Garis */
+    background: #818080; /* Warna Garis */
+    margin-right: 20px; /* Jarak antara garis dan teks */
+}
+
+/* Garis Kanan (Menggunakan Pseudo-element ::after) */
+.solution-header h2::after {
+    content: "";
+    display: block;
+    width: 500px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    height: 1px;
+    background: #818080;
+    margin-left: 5px; /* Jarak antara teks dan garis */
+}
+/* YOUR BEST SOLUTION */
+
+
+/* BRAND SECTION */
+.brand-section {
+    padding-top: 150px;
+    background-color: #F6FEFF;
+}
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2px;
+    transition: transform 0.3s ease;
+    background-color:#F6FEFF;
+    padding-top: 20px;
+}
+
+.card-item {
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    margin: 0 10px;
+    padding: 20px;
+    filter: grayscale(0); /* normal berwarna */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
+}
+
+.card-item:hover {
+    transform: scale(1.05); /* sedikit membesar / timbul */
+}
+
+
+.card-item h2{
+    font-size: 20px;
+    align-items: center;
+}
+
+.logo-brand {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card-item .teks-brand h2{
+    font-size: 1000px;
+}
+
+.btn-brand {
+    padding: 8px 14px;
+    background-color: #005baa;
+    color: #f20000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: end;
+}
+
+.prev, .next {
+    background-color: #005baa;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background 0.3s;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+    background-color: #003f73;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.brand-title{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #666666;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.brand-title::before {
+    content: "";
+    display: block;
+    width: 500px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px; /* Ketebalan Garis */
+    background: #818080; /* Warna Garis */
+    margin-right: 20px; /* Jarak antara garis dan teks */
+}
+
+/* Garis Kanan (Menggunakan Pseudo-element ::after) */
+.brand-title::after {
+    content: "";
+    display: block;
+    width: 500px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    height: 1px;
+    background: #818080;
+    margin-left: 5px; /* Jarak antara teks dan garis */
+}
+
+/* BRAND SECTION */
+
+/* COSTUMER SECTION */
+
+.costumer-section {
+    background-color: #f9fafb;
+    padding-top: 200px;;
+    text-align: center;
+    overflow: hidden;
+}
+
+.costumer-title {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.slidercos-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-listcos {
+    display: flex;
+    gap: 20px;
+    animation: scrollBrands 20s linear infinite;
+}
+
+.card-item {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-8px);
+}
+
+.logo-brand {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* 🔄 Animasi slider otomatis */
+@keyframes scrollBrands {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+/* COSTUMER SECTION */
+
