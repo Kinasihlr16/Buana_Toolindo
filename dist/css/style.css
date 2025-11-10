@@ -1,19 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", "Open Sans";
 }
 
-a{
+a {
     text-decoration: none;
 
 }
 
-
 /* NAVBAR */
 
 /* SETTING ALL NAVBAR HEADER*/
-.navbar{ 
+.navbar {
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.746);
     padding: 10px 10px;
@@ -22,26 +21,26 @@ a{
     position: relative;
     z-index: 10;
     display: flex;
-    
+
 }
 
 /* UKURAN GAMBAR DI HEADER NAVBAR */
-.navbar-brand{
+.navbar-brand {
     height: 50px;
     width: auto;
     padding-top: 5px;
-    
+
 }
 
 /* MENU DI NAVBAR */
-.navbar-nav{
+.navbar-nav {
     text-align: center;
     text-align: center;
     gap: 20px;
 }
 
 /* TATA LETAK ISI NAVBAR */
-.navbar .container{
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,20 +49,20 @@ a{
 }
 
 /* TEKS DI NAVBAR MENU */
-.nav-link{
+.nav-link {
     font-size: 14px;
     color: #828282;
 }
 
 /* RESPONSIF AGAR TEKS MENU NAVBAR BERUBAH WARNA KETIKA KURSOR MENGARAH */
-.nav-link:hover{
+.nav-link:hover {
     color: black;
     transform: translateY(-2px);
 }
 
 /* GARIS BAWAH DI ATAS MENU ITEM */
-.nav-link.active{
-    border-bottom:3px solid #595959;
+.nav-link.active {
+    border-bottom: 3px solid #595959;
     position: relative;
 }
 
@@ -84,11 +83,11 @@ a{
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* full screen height */
-    overflow: hidden; /* sembunyikan overflow jika ada */
+    height: 100vh;
+    overflow: hidden;
 }
 
-.hero .container{
+.hero .container {
     max-width: 1150px;
     margin: 0 auto;
 }
@@ -100,24 +99,24 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(45, 45, 45, 0.365); /* ubah 0.4 -> 0.6 kalau mau lebih gelap */
+    background: rgba(45, 45, 45, 0.365);
 }
 
-.hero-video{
+.hero-video {
     position: absolute;
     width: 115%;
     height: 140%;
-    object-fit: contain; /* menampilkan seluruh video tanpa terpotong */
+    object-fit: contain;
     z-index: -1;
-    background: rgba(46, 46, 46, 0.765); /* ubah 0.4 -> 0.6 kalau mau lebih gelap */
+    background: rgba(46, 46, 46, 0.765);
 }
 
 /* Konten di atas video */
-
 .hero-content {
     position: relative;
     z-index: 5;
-    /*diatasvideo*/color: white;
+    /*diatasvideo*/
+    color: white;
     margin: 60 auto;
     padding-top: 60px;
     display: flex;
@@ -126,14 +125,14 @@ a{
     font-weight: 700PX;
 }
 
-.hero-content h1{
+.hero-content h1 {
     white-space: nowrap;
     font-size: 23px;
     align-items: center;
     text-align: left;
 }
 
-.logo-desc{
+.logo-desc {
     padding-top: 20px;
     display: flex;
     align-items: flex-start;
@@ -141,7 +140,7 @@ a{
     margin: 50px auto;
 }
 
-.logo-desc img{
+.logo-desc img {
     max-width: 250px;
     height: auto;
     padding-left: 50px;
@@ -149,7 +148,7 @@ a{
 
 }
 
-.logo-desc p{
+.logo-desc p {
     font-size: 18px;
     padding-left: 2px;
     text-align: center;
@@ -159,7 +158,7 @@ a{
     margin-bottom: 40px;
 }
 
-.button-hero{
+.button-hero {
     text-align: right;
     margin-top: 5px;
 }
@@ -170,22 +169,22 @@ a{
     margin-right: 20px;
     display: inline-block;
     transition: background-color 0.3s ease;
-    background-color:#D9D9D9 ;
-    color:  #262626;
+    background-color: #D9D9D9;
+    color: #262626;
     font-size: 17px;
     border-radius: 8px;
 }
 
-.btn-products:hover{
+.btn-products:hover {
     color: #828282;
 }
 
-.btn-contact{
+.btn-contact {
     padding: 10px 12px 12px 10px;
     display: inline-block;
     transition: background-color 0.3s ease;
-    background-color: #D9D9D9 ;
-    color:#262626 ;
+    background-color: #D9D9D9;
+    color: #262626;
     font-size: 17px;
     border-radius: 8px;
     -webkit-transition: background-color 0.3s ease;
@@ -194,11 +193,11 @@ a{
     -o-transition: background-color 0.3s ease;
 }
 
-.btn-contact:hover{
+.btn-contact:hover {
     color: #828282;
 }
 
-header svg{
+header svg {
     margin-bottom: -90px;
 }
 
@@ -206,39 +205,45 @@ header svg{
 
 /* SPECIALIZE SECTION */
 
-.specialization-section{
-    background-color:#F6FEFF ;
+.specialization-section {
+    background-color: #F6FEFF;
     margin-top: -185px;
     padding: 80px 0;
 }
 
 .content-wrapper {
-    display: flex; /* Mengaktifkan Flexbox untuk tata letak horizontal */
-    justify-content: space-between; /* Memberi jarak antar kotak/kolom */
-    gap: 20px; /* Jarak antara setiap elemen */
+    display: flex;
+    /* Mengaktifkan Flexbox untuk tata letak horizontal */
+    justify-content: space-between;
+    /* Memberi jarak antar kotak/kolom */
+    gap: 20px;
+    /* Jarak antara setiap elemen */
     margin-top: 30px;
 }
 
 .box {
     /* Setiap kotak mengambil sekitar 25% dari lebar wrapper */
-    flex-basis: 25%; 
-    height: 400px; 
-    border: 2px solid rgb(197, 197, 197); /* Border outline seperti di mockup */
+    flex-basis: 25%;
+    height: 400px;
+    border: 2px solid rgb(197, 197, 197);
+    /* Border outline seperti di mockup */
     /* Menambahkan border-radius untuk sudut yang lebih lembut */
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 20px;
     display: flex;
-    flex-direction: column; 
-    align-items: center; /* Pusat horizontal */
+    flex-direction: column;
+    align-items: center;
+    /* Pusat horizontal */
     text-align: center;
 }
 
 /* Gaya untuk Ikon */
 .box i {
-    font-size: 3em; 
-    color: #262626; /* Warna ikon, sesuaikan! */
-    margin-top: 30px; 
-    margin-bottom:30px;
+    font-size: 3em;
+    color: #262626;
+    /* Warna ikon, sesuaikan! */
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Gaya untuk Judul di Kotak */
@@ -250,13 +255,13 @@ header svg{
     white-space: nowrap;
 }
 
-.box p{
+.box p {
     font-size: 16px;
     text-align: center;
     color: #828282;
 }
 
-.container h2{
+.container h2 {
     font-size: 20px;
     font-family: "Montserrat";
     color: #666666;
@@ -271,28 +276,34 @@ header svg{
 .specialization-section h2::before {
     content: "";
     display: block;
-    width: 600px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
-    height: 1px; /* Ketebalan Garis */
-    background: #818080; /* Warna Garis */
-    margin-right: 20px; /* Jarak antara garis dan teks */
+    width: 600px;
+    /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px;
+    /* Ketebalan Garis */
+    background: #818080;
+    /* Warna Garis */
+    margin-right: 20px;
+    /* Jarak antara garis dan teks */
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
 .specialization-section h2::after {
     content: "";
     display: block;
-    width: 600px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    width: 600px;
+    /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
-    margin-left: 20px; /* Jarak antara teks dan garis */
+    margin-left: 20px;
+    /* Jarak antara teks dan garis */
 }
 
 /* SPECIALIZE SECTION */
 
 /* YOUR BEST SOLUTION */
 
-.best-solution{
-    background-color:#F6FEFF ;
+.best-solution {
+    background-color: #F6FEFF;
     margin-top: 0px;
     padding: 80px;
 }
@@ -309,14 +320,17 @@ header svg{
     text-decoration: none;
     transition: transform 0.4s ease;
     padding: 80 80 120 80;
-    filter: grayscale(0); /* normal berwarna */
+    filter: grayscale(0);
+    /* normal berwarna */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
 }
 
 .solution-card:hover {
-    filter: grayscale(100%); 
-    transform: scale(1.05); /* sedikit membesar / timbul */
-    box-shadow: 0 8px 20px rgba(158, 158, 158, 0.608); /* efek timbul */
+    filter: grayscale(100%);
+    transform: scale(1.05);
+    /* sedikit membesar / timbul */
+    box-shadow: 0 8px 20px rgba(158, 158, 158, 0.608);
+    /* efek timbul */
 }
 
 
@@ -344,11 +358,11 @@ header svg{
     transform: skew(0deg);
 }
 
-.overlay :hover{
+.overlay :hover {
     transform: translateY(-2px);
 }
 
-.solution-header h2{
+.solution-header h2 {
     font-size: 20px;
     font-family: "Montserrat";
     color: #666666;
@@ -362,21 +376,28 @@ header svg{
 .solution-header h2::before {
     content: "";
     display: block;
-    width: 500px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
-    height: 1px; /* Ketebalan Garis */
-    background: #818080; /* Warna Garis */
-    margin-right: 20px; /* Jarak antara garis dan teks */
+    width: 500px;
+    /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px;
+    /* Ketebalan Garis */
+    background: #818080;
+    /* Warna Garis */
+    margin-right: 20px;
+    /* Jarak antara garis dan teks */
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
 .solution-header h2::after {
     content: "";
     display: block;
-    width: 500px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    width: 500px;
+    /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
-    margin-left: 5px; /* Jarak antara teks dan garis */
+    margin-left: 5px;
+    /* Jarak antara teks dan garis */
 }
+
 /* YOUR BEST SOLUTION */
 
 
@@ -399,7 +420,7 @@ header svg{
     scroll-behavior: smooth;
     gap: 2px;
     transition: transform 0.3s ease;
-    background-color:#F6FEFF;
+    background-color: #F6FEFF;
     padding-top: 20px;
 }
 
@@ -409,16 +430,18 @@ header svg{
     min-width: 200px;
     margin: 0 10px;
     padding: 20px;
-    filter: grayscale(0); /* normal berwarna */
+    filter: grayscale(0);
+    /* normal berwarna */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
 }
 
 .card-item:hover {
-    transform: scale(1.05); /* sedikit membesar / timbul */
+    transform: scale(1.05);
+    /* sedikit membesar / timbul */
 }
 
 
-.card-item h2{
+.card-item h2 {
     font-size: 20px;
     align-items: center;
 }
@@ -430,7 +453,7 @@ header svg{
     margin-bottom: 10px;
 }
 
-.card-item .teks-brand h2{
+.card-item .teks-brand h2 {
     font-size: 1000px;
 }
 
@@ -444,7 +467,8 @@ header svg{
     align-items: end;
 }
 
-.prev, .next {
+.prev,
+.next {
     background-color: #005baa;
     color: white;
     border: none;
@@ -459,14 +483,20 @@ header svg{
     transform: translateY(-50%);
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: #003f73;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+    left: 10px;
+}
 
-.brand-title{
+.next {
+    right: 10px;
+}
+
+.brand-title {
     font-size: 20px;
     font-family: "Montserrat";
     color: #666666;
@@ -480,20 +510,26 @@ header svg{
 .brand-title::before {
     content: "";
     display: block;
-    width: 500px; /* Panjang Garis Kiri (Sesuaikan nilai ini) */
-    height: 1px; /* Ketebalan Garis */
-    background: #818080; /* Warna Garis */
-    margin-right: 20px; /* Jarak antara garis dan teks */
+    width: 500px;
+    /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px;
+    /* Ketebalan Garis */
+    background: #818080;
+    /* Warna Garis */
+    margin-right: 20px;
+    /* Jarak antara garis dan teks */
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
 .brand-title::after {
     content: "";
     display: block;
-    width: 500px; /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    width: 500px;
+    /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
-    margin-left: 5px; /* Jarak antara teks dan garis */
+    margin-left: 5px;
+    /* Jarak antara teks dan garis */
 }
 
 /* BRAND SECTION */
@@ -502,7 +538,8 @@ header svg{
 
 .costumer-section {
     background-color: #f9fafb;
-    padding-top: 200px;;
+    padding-top: 200px;
+    ;
     text-align: center;
     overflow: hidden;
 }
@@ -547,11 +584,15 @@ header svg{
 
 /* 🔄 Animasi slider otomatis */
 @keyframes scrollBrands {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
 
 /* COSTUMER SECTION */
-
