@@ -176,7 +176,7 @@ a {
 }
 
 .btn-products:hover {
-    color: #828282;
+    background-color: #828282;
 }
 
 .btn-contact {
@@ -194,7 +194,7 @@ a {
 }
 
 .btn-contact:hover {
-    color: #828282;
+    background-color: #828282;
 }
 
 header svg {
@@ -208,7 +208,7 @@ header svg {
 .specialization-section {
     background-color: #F6FEFF;
     margin-top: -185px;
-    padding: 80px 0;
+    padding: 80px 50px;
 }
 
 .content-wrapper {
@@ -403,7 +403,7 @@ header svg {
 
 /* BRAND SECTION */
 .brand-section {
-    padding-top: 150px;
+    padding-top:80px;
     background-color: #F6FEFF;
 }
 
@@ -427,12 +427,21 @@ header svg {
 .card-item {
     border-radius: 10px;
     text-align: center;
-    min-width: 200px;
+    width: 200px;
+    height: 200px;
     margin: 0 10px;
     padding: 20px;
     filter: grayscale(0);
     /* normal berwarna */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .card-item:hover {
@@ -446,9 +455,9 @@ header svg {
     align-items: center;
 }
 
-.logo-brand {
-    width: 120px;
-    height: 80px;
+.card-item .logo-brand {
+    width: 100%;
+    height: 140px;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -459,8 +468,8 @@ header svg {
 
 .btn-brand {
     padding: 8px 14px;
-    background-color: #005baa;
-    color: #f20000;
+    background-color: #D9D9D9;
+    color: #4A4646;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -510,7 +519,7 @@ header svg {
 .brand-title::before {
     content: "";
     display: block;
-    width: 500px;
+    width: 600px;
     /* Panjang Garis Kiri (Sesuaikan nilai ini) */
     height: 1px;
     /* Ketebalan Garis */
@@ -524,7 +533,7 @@ header svg {
 .brand-title::after {
     content: "";
     display: block;
-    width: 500px;
+    width: 600px;
     /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
@@ -534,65 +543,461 @@ header svg {
 
 /* BRAND SECTION */
 
+
+/* TRUSTED SECTION */
+    .about-company {
+    background-color: #f8fdff;
+    padding: 180px 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .about-company .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    }
+
+    .stats {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-card i {
+    font-size: 36px;
+    color: #666666;
+    margin-bottom: 15px;
+    }
+
+    .stat-card h2 {
+    font-size: 32px;
+    color: #262626;
+    margin-bottom: 5px;
+    text-align: center;
+    }
+
+    .stat-card p {
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+    }
+
+    .background-company img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* background di atas */
+    opacity: 0.2;
+
+    }
+
+    .company-description {
+    max-width: 450px;
+    z-index: 5;
+    position: relative;
+    /*diatasfoto*/;
+    align-items: center;
+    font-weight: 700px;
+    }
+
+
+    .company-description .tag {
+    display: inline-block;
+    background-color: #d9d9d9;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 25  px;
+    font-weight: 600;
+    color: #666664;
+    margin-bottom: 10px;
+    }
+
+    .company-description h1 {
+    font-size: 40px;
+    color: #666666;
+    margin-bottom: 15px;
+    }
+
+    .counter {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    }
+
+
+    .company-description p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    @media (max-width: 768px) {
+    .about-company .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+
+    .company-description {
+        max-width: 90%;
+    }
+    }
+
+/* TRUSTED SECTION */
+
+
+
+
 /* COSTUMER SECTION */
 
 .costumer-section {
     background-color: #f9fafb;
-    padding-top: 200px;
-    ;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 50px;
 }
 
-.costumer-title {
-    font-size: 2rem;
-    color: #1e293b;
-    margin-bottom: 30px;
-    font-weight: 700;
+.costumer-container{
+
+    align-items: center;
+
 }
 
 .slidercos-wrapper {
     position: relative;
-    width: 100%;
+    width: 200%;
     overflow: hidden;
 }
 
 .card-listcos {
     display: flex;
-    gap: 20px;
     animation: scrollBrands 20s linear infinite;
 }
 
-.card-item {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card-items {
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    margin: 0 10px;
     padding: 20px;
-    min-width: 220px;
+    filter: grayscale(0);
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    min-width: 200px;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
-.card-item:hover {
+.card-items:hover {
     transform: translateY(-8px);
 }
 
-.logo-brand {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
+.card-items .logo-brandcos {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.costumer-title{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #666666;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.costumer-title::before {
+    content: "";
+    display: block;
+    width: 600px;
+    /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+    height: 1px;
+    /* Ketebalan Garis */
+    background: #818080;
+    /* Warna Garis */
+    margin-right: 20px;
+    /* Jarak antara garis dan teks */
+}
+
+/* Garis Kanan (Menggunakan Pseudo-element ::after) */
+.costumer-title::after {
+    content: "";
+    display: block;
+    width: 600px;
+    /* Panjang Garis Kanan (Harus sama dengan kiri) */
+    height: 1px;
+    background: #818080;
+    margin-left: 20px;
+    /* Jarak antara teks dan garis */
+}
+
 
 /* 🔄 Animasi slider otomatis */
 @keyframes scrollBrands {
     0% {
-        transform: translateX(0);
-    }
+        transform: translateX();
+}
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-137%);  /* INI JANGAN DIRUBAH PLEASE SOALNYA UDAH FIX SLIDERNYA BIAR GA PATAH */
+}
+}
+
+/* COSTUMER SECTION */
+
+/* LOCATION */
+    .office-section {
+    background-color: #f3f8fb;
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
     }
+
+    .section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+    }
+
+    .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #999;
+    margin: 10px auto 0;
+    }
+
+    .office-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .office-card {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .office-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    }
+
+    .office-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0 8px;
+    color: #262626;
+    }
+
+    .office-card p {
+    font-size: 14px;
+    color: #262626;
+    line-height: 1.5;
+    padding: 0 15px;
+    }
+
+    .office-card i {
+    color: #262626;
+    margin-right: 5px;
+    }
+
+    .btn-location {
+    margin-top: 10px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    }
+
+    .btn-location:hover {
+    background-color: #828282;
+    }
+
+    .location-title{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #666666;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    }
+
+    .location-title::before {
+        content: "";
+        display: block;
+        width: 600px;
+        /* Panjang Garis Kiri (Sesuaikan nilai ini) */
+        height: 1px;
+        /* Ketebalan Garis */
+        background: #818080;
+        /* Warna Garis */
+        margin-right: 20px;
+        /* Jarak antara garis dan teks */
+    }
+
+    /* Garis Kanan (Menggunakan Pseudo-element ::after) */
+    .location-title::after {
+        content: "";
+        display: block;
+        width: 600px;
+        /* Panjang Garis Kanan (Harus sama dengan kiri) */
+        height: 1px;
+        background: #818080;
+        margin-left: 20px;
+        /* Jarak antara teks dan garis */
+    }
+
+
+/* LOCATION */
+
+
+/* FOOTER */
+footer {
+    background-color: #E4DFDF; 
+    padding: 40px 0 0px; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer-top-section {
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: space-between; /* Memberikan jarak yang merata */
+    max-width: 1200px; /* Batasi lebar agar konten tidak terlalu melebar */
+    margin: 0 auto; /* Tengah-kan container */
+    padding: 0 20px 40px; /* Padding kiri, kanan, dan bawah */
+    border-bottom: 1px solid #ccc; /* Garis pemisah tipis di bawah kolom atas */
 }
 
 
 
-/* COSTUMER SECTION */
+.footer-col {
+    /* Alokasi lebar untuk setiap kolom. Kolom 1 lebih lebar. */
+    flex: 1; 
+    margin: 0 50px;
+}
+
+.branding-col {
+    flex: 1.5; /* Memberikan lebar yang lebih besar untuk kolom logo/deskripsi */
+}
+
+.contact-col, .social-col {
+    flex: 1; /* Lebar yang sama untuk kolom 2 dan 3 */
+}
+
+.contact-col i{
+    margin-right: 12px;
+}
+
+.contact-col li span{
+    font-weight: 800;
+}
+
+.contact-col .fa-whatsapp{
+    font-weight: 800;
+}
+
+.social-col .fa-instagram{
+    font-weight: 800;
+}
+.footer-col .gambar1{
+    padding-bottom: 30px;
+}
+
+.footer-col .gambar2{
+    padding-bottom: 10px;
+}
+
+.footer-col p{
+    font-size: 14px;
+    color: #262626;
+    padding-top: 20px;
+}
+
+.footer-col h2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #333; /* Warna gelap */
+}
+
+.footer-col ul {
+    list-style: none; /* Hilangkan bullet point */
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer-bottom-section {
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #262626; /* Warna teks hak cipta */
+    font-style: bold;
+}
+
+/* FOOTER */
