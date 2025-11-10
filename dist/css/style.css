@@ -79,12 +79,11 @@ a {
 }
 
 /* HERO */
-
 .hero {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    min-height: clamp(520px, 80vh, 880px);
     overflow: hidden;
+    isolation: isolate;
 }
 
 .hero .container {
@@ -95,47 +94,39 @@ a {
 .hero::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(45, 45, 45, 0.365);
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 1;
 }
 
+/* Video full supaya tidak terpotong */
 .hero-video {
     position: absolute;
-    width: 115%;
-    height: 140%;
-    object-fit: contain;
-    z-index: -1;
-    background: rgba(46, 46, 46, 0.765);
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+    
 }
 
 /* Konten di atas video */
-.hero-content {
+.hero .hero-content {
     position: relative;
-    z-index: 5;
-    /*diatasvideo*/
-    color: white;
-    margin: 60 auto;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 700PX;
+    z-index: 2;
 }
 
 .hero-content h1 {
-    white-space: nowrap;
-    font-size: 23px;
-    align-items: center;
-    text-align: left;
+    white-space: normal;
+    text-align: center;
+    font-size: clamp(20px, 3.2vw, 40px);
+    line-height: 1.3;
 }
 
 .logo-desc {
     padding-top: 20px;
-    display: flex;
-    align-items: flex-start;
     gap: 30px;
     margin: 50px auto;
 }
@@ -145,7 +136,6 @@ a {
     height: auto;
     padding-left: 50px;
     padding-top: 0;
-
 }
 
 .logo-desc p {
@@ -153,26 +143,28 @@ a {
     padding-left: 2px;
     text-align: center;
     flex-grow: 1;
-    margin-bottom: 0;
     max-width: 600px;
     margin-bottom: 40px;
 }
 
 .button-hero {
-    text-align: right;
     margin-top: 5px;
+}
+
+.btn-products,
+.btn-contact {
+    display: inline-block;
+    background-color: #d9d9d9;
+    color: #262626;
+    font-size: 17px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-products {
     padding: 10px 10px 10px 10px;
     text-align: center;
     margin-right: 20px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    background-color: #D9D9D9;
-    color: #262626;
-    font-size: 17px;
-    border-radius: 8px;
 }
 
 .btn-products:hover {
@@ -181,42 +173,31 @@ a {
 
 .btn-contact {
     padding: 10px 12px 12px 10px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    background-color: #D9D9D9;
-    color: #262626;
-    font-size: 17px;
-    border-radius: 8px;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
 }
 
 .btn-contact:hover {
     background-color: #828282;
 }
-
 header svg {
-    margin-bottom: -90px;
+    margin-bottom: -30px;
 }
+
 
 /* NAVBAR */
 
-/* SPECIALIZE SECTION */
+/* WE SPECIALIZE IN SECTION */
 
 .specialization-section {
     background-color: #F6FEFF;
-    margin-top: -185px;
-    padding: 80px 50px;
+    margin-top: 40px;
 }
 
-.content-wrapper {
+.four-col{
     display: flex;
     /* Mengaktifkan Flexbox untuk tata letak horizontal */
     justify-content: space-between;
     /* Memberi jarak antar kotak/kolom */
-    gap: 20px;
+    gap: 5px;
     /* Jarak antara setiap elemen */
     margin-top: 30px;
 }
@@ -273,7 +254,7 @@ header svg {
 
 }
 
-.specialization-section h2::before {
+.col-12 h2::before {
     content: "";
     display: block;
     width: 600px;
@@ -287,7 +268,7 @@ header svg {
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
-.specialization-section h2::after {
+.col-12 h2::after {
     content: "";
     display: block;
     width: 600px;
@@ -298,14 +279,16 @@ header svg {
     /* Jarak antara teks dan garis */
 }
 
-/* SPECIALIZE SECTION */
+
+/* WE SPECIALIZE IN SECTION */
+
 
 /* YOUR BEST SOLUTION */
 
 .best-solution {
     background-color: #F6FEFF;
-    margin-top: 0px;
-    padding: 80px;
+    margin-top: 100px;
+    padding-bottom: 30px;
 }
 
 .solution-card {
@@ -338,8 +321,8 @@ header svg {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px;
+    gap: 5px;
+    padding: 2px;
 }
 
 .overlay {
@@ -376,7 +359,7 @@ header svg {
 .solution-header h2::before {
     content: "";
     display: block;
-    width: 500px;
+    width: 600px;
     /* Panjang Garis Kiri (Sesuaikan nilai ini) */
     height: 1px;
     /* Ketebalan Garis */
@@ -390,21 +373,40 @@ header svg {
 .solution-header h2::after {
     content: "";
     display: block;
-    width: 500px;
+    width: 600px;
     /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
-    margin-left: 5px;
+    margin-left: 20px;
     /* Jarak antara teks dan garis */
 }
+
 
 /* YOUR BEST SOLUTION */
 
 
 /* BRAND SECTION */
 .brand-section {
-    padding-top:80px;
-    background-color: #F6FEFF;
+    padding: 64px 0 80px;
+    background: #F6FEFF;
+}
+
+.brand-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #666;
+    margin: 0 0 16px;
+}
+
+.brand-title::before,
+.brand-title::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: #818080;
 }
 
 .slider-wrapper {
@@ -416,107 +418,131 @@ header svg {
 
 .card-list {
     display: flex;
+    gap: 16px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 2px;
-    transition: transform 0.3s ease;
-    background-color: #F6FEFF;
-    padding-top: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 12px 56px;
+    margin: 0;
+    background: #F6FEFF;
+    -webkit-overflow-scrolling: touch;
 }
 
+/* sembunyikan scrollbar (opsional) */
+.card-list::-webkit-scrollbar {
+    height: 0;
+}
+
+.card-list {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Kartu brand */
 .card-item {
-    border-radius: 10px;
-    text-align: center;
+    flex: 0 0 auto;
     width: 200px;
-    height: 200px;
-    margin: 0 10px;
-    padding: 20px;
-    filter: grayscale(0);
-    /* normal berwarna */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.878);
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0px;
-    min-width: 200px;
-    transition: transform 0.3s ease;
-    object-fit: contain;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 16px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: transform .2s ease, box-shadow .2s ease;
+    scroll-snap-align: start;
 }
 
 .card-item:hover {
-    transform: scale(1.05);
-    /* sedikit membesar / timbul */
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .12);
 }
 
-
-.card-item h2 {
-    font-size: 20px;
-    align-items: center;
-}
-
-.card-item .logo-brand {
-    width: 100%;
-    height: 140px;
+/* Logo */
+.logo-brand {
+    width: 140px;
+    height: 90px;
     object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.card-item .teks-brand h2 {
-    font-size: 1000px;
+    margin-bottom: 12px;
 }
 
 .btn-brand {
-    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 36px;
+    padding: 8px 12px;
+    border-radius: 8px;
     background-color: #D9D9D9;
     color: #4A4646;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto;
+    transition: filter .2s ease, transform .1s ease;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    align-items: end;
 }
 
+.btn-brand:hover {
+    filter: brightness(1.05);
+    background-color: #828282;
+}
+
+.btn-brand:active {
+    transform: scale(.98);
+}
+
+/* Tombol panah */
 .prev,
 .next {
-    background-color: #005baa;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
-    transition: background 0.3s;
     position: absolute;
-    z-index: 10;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background-color: #005baa;
+    color: #fff;
+    font-size: 22px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .2);
+    transition: background .2s ease, transform .1s ease, opacity .2s ease;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: #003f73;
+    background: #003f73;
+}
+
+.prev:active,
+.next:active {
+    transform: translateY(-50%) scale(.96);
 }
 
 .prev {
-    left: 10px;
+    left: 6px;
 }
 
 .next {
-    right: 10px;
+    right: 6px;
 }
 
-.brand-title {
-    font-size: 20px;
-    font-family: "Montserrat";
-    color: #666666;
-    padding-bottom: 20px;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    margin: 0;
+.prev:disabled,
+.next:disabled {
+    opacity: .45;
+    cursor: default;
+    background: #7aa9cf;
+    box-shadow: none;
 }
 
-.brand-title::before {
+.brand-section h2::before {
     content: "";
     display: block;
     width: 600px;
@@ -530,18 +556,30 @@ header svg {
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
-.brand-title::after {
+.brand-section h2::after {
     content: "";
     display: block;
     width: 600px;
     /* Panjang Garis Kanan (Harus sama dengan kiri) */
     height: 1px;
     background: #818080;
-    margin-left: 5px;
+    margin-left: 20px;
     /* Jarak antara teks dan garis */
 }
 
-/* BRAND SECTION */
+
+/* Responsif */
+@media (max-width: 576px) {
+    .card-item {
+        width: 170px;
+        padding: 12px;
+    }
+
+    .logo-brand {
+        width: 120px;
+        height: 72px;
+    }
+}
 
 
 /* TRUSTED SECTION */
@@ -680,9 +718,7 @@ header svg {
 /* TRUSTED SECTION */
 
 
-
-
-/* COSTUMER SECTION */
+/* OUR VALUED PARTNER SECTION */
 
 .costumer-section {
     background-color: #f9fafb;
@@ -692,9 +728,7 @@ header svg {
 }
 
 .costumer-container{
-
     align-items: center;
-
 }
 
 .slidercos-wrapper {
@@ -706,6 +740,7 @@ header svg {
 .card-listcos {
     display: flex;
     animation: scrollBrands 20s linear infinite;
+    -webkit-animation: scrollBrands 20s linear infinite;
 }
 
 .card-items {
@@ -738,7 +773,7 @@ header svg {
     align-items: center;
 }
 
-.costumer-title{
+.costumer-section h2{
     font-size: 20px;
     font-family: "Montserrat";
     color: #666666;
@@ -749,7 +784,7 @@ header svg {
     margin: 0;
 }
 
-.costumer-title::before {
+.costumer-section h2::before {
     content: "";
     display: block;
     width: 600px;
@@ -763,7 +798,7 @@ header svg {
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
-.costumer-title::after {
+.costumer-section h2::after {
     content: "";
     display: block;
     width: 600px;
@@ -786,7 +821,7 @@ header svg {
 }
 }
 
-/* COSTUMER SECTION */
+/* OUR VALUED PARTNER SECTION */
 
 /* LOCATION */
     .office-section {
@@ -817,7 +852,7 @@ header svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     }
 
     .office-card {
@@ -884,7 +919,7 @@ header svg {
     margin: 0;
     }
 
-    .location-title::before {
+    .office-section h2::before {
         content: "";
         display: block;
         width: 600px;
@@ -898,7 +933,7 @@ header svg {
     }
 
     /* Garis Kanan (Menggunakan Pseudo-element ::after) */
-    .location-title::after {
+    .office-section h2::after {
         content: "";
         display: block;
         width: 600px;
@@ -996,6 +1031,7 @@ footer {
     text-align: center;
     padding: 15px 20px;
     font-size: 16px;
+    font-weight: 500;
     color: #262626; /* Warna teks hak cipta */
     font-style: bold;
 }

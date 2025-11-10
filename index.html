@@ -11,7 +11,6 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
     <!-- Icons Website -->
     <link
         rel="shortcut icon"
@@ -38,7 +37,10 @@
         rel="stylesheet"
     />
     <!-- LINK BOXICONS -->
-    <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
@@ -91,101 +93,118 @@
         <!-- NAVBAR -->
 
         <!-- HERO   -->
-        <section class="hero">
-            <video autoplay muted loop playsinline class="hero-video" src="./assets/video/hover.mp4" type="video/mp4"></video>
-            <div class="container">
-            <div class="hero-content">
-                <h1>
-                “Your Trusted Partner for Precision Cutting Tools & Industrial
-                Equipment”
-                </h1>
-                <div class="logo-desc">
-                <img src="./assets/image/logo.webp" alt="hero-logo" />
-                <p>
-                    Established in 2004, PT. Buana Arta Toolindo (BAT) is a trading
-                    company that provides a wide range of high-quality cutting tools
-                    and industrial equipment. <br />
-                    <br />We remain dynamic and are committed to treating our
-                    customers as business partners, growing and succeeding together
-                    through mutual collaboration.
-                </p>
-                </div>
-                <div class="button-hero">
-                <!-- Button pertama -->
-                <a href="#products" class="btn-products">Explore Products</a>
-                <!-- Button kedua -->
-                <a href="#contact" class="btn-contact">Contact Sales</a>
-                </div>
-            </div>
-            </div>
-        </section>
-        <!-- HERO -->
+        <section class="hero p-4">
+            <video autoplay muted loop playsinline class="hero-video">
+            <source src="./assets/video/hover.mp4" type="video/mp4" />
+            </video>
 
-        <!-- PEMBATAS WAVE-->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-            class="wave1"
-            fill="#F6FEFF"
-            fill-opacity="1"
-            d="M0,32L1440,64L1440,0L0,0Z"
-            ></path>
-        </svg>
-        <!-- END PEMBATAS WAVE -->
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                <div class="hero-content">
+                    <h1 class="text-white">
+                    “Your Trusted Partner for Precision Cutting Tools & Industrial
+                    Equipment”
+                    </h1>
+
+                    <div
+                    class="logo-desc d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-4"
+                    >
+                    <img src="./assets/image/logo.webp" alt="hero-logo" />
+                    <p class="mb-0 text-white">
+                        Established in 2004, PT. Buana Arta Toolindo (BAT) is a
+                        trading company that provides a wide range of high-quality
+                        cutting tools and industrial equipment. <br /><br />
+                        We remain dynamic and are committed to treating our
+                        customers as business partners, growing and succeeding
+                        together through mutual collaboration.
+                    </p>
+                    </div>
+
+                    <div
+                    class="button-hero d-flex flex-column flex-sm-row align-items-center align-items-lg-start justify-content-center justify-content-lg-start gap-3 mt-4 text-center text-lg-start mx-4"
+                    >
+                    <!-- Button pertama -->
+                    <a href="#products" class="btn-products">Explore Products</a>
+                    <!-- Button kedua -->
+                    <a href="#contact" class="btn-contact">Contact Sales</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+            <!-- SPECIALIZE SECTION -->
 
         <!-- NAVBAR -->
         </header>
 
-        <!-- SPECIALIZE SECTION -->
+        <!-- WE SPECIALIZE IN SECTION -->
         <section class="specialization-section">
         <div class="container">
-            <h2>WE SPECIALIZE IN</h2>
+            <div class="row">
+            <div class="col-12">
+                <h2>WE SPECIALIZE IN</h2>
+            </div>
+            </div>
+
             <div class="content-wrapper four-col">
-            <div class="box">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 <h3>Precision Tool Stockist</h3>
                 <p>
-                Ensuring the availability of a wide range of high-precision
-                cutting tools that are ready for immediate delivery, helping to
-                minimize your production downtime.
+                    Ensuring the availability of a wide range of high-precision
+                    cutting tools that are ready for immediate delivery, helping to
+                    minimize your production downtime.
                 </p>
+                </div>
             </div>
-            <div class="box">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
                 <i class="fa-solid fa-hands-helping"></i>
                 <h3>Technical Consultation</h3>
                 <p>
-                Providing expert technical support for selecting the right tools,
-                optimizing cutting processes, and improving overall efficiency.
+                    Providing expert technical support for selecting the right
+                    tools, optimizing cutting processes, and improving overall
+                    efficiency.
                 </p>
+                </div>
             </div>
-            <div class="box">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
                 <i class="fa-solid fa-truck-fast"></i>
                 <h3>Fast & Reliable Delivery</h3>
                 <p>
-                An organized logistics system that ensures fast and on-time
-                delivery of cutting tools, supporting the smooth operation of your
-                production schedule.
+                    An organized logistics system that ensures fast and on-time
+                    delivery of cutting tools, supporting the smooth operation of
+                    your production schedule.
                 </p>
+                </div>
             </div>
-            <div class="box">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
                 <i class="fa-solid fa-shield-alt"></i>
                 <h3>Certified Industrial Standards</h3>
                 <p>
-                Every product we supply meets the highest international standards,
-                including ISO and DIN certifications, providing assurance of
-                superior quality, performance, and safety.
+                    Every product we supply meets the highest international
+                    standards, including ISO and DIN certifications, providing
+                    assurance of superior quality, performance, and safety.
                 </p>
+                </div>
             </div>
             </div>
-        </div>
-        </section>
-        <!-- SPECIALIZE SECTION -->
+        <!-- WE SPECIALIZE IN SECTION -->
 
-        <!-- YOUR BEST SOLUTION -->
+
+        <!-- YOUR BEST SOLUTION SECTION -->
         <section class="best-solution">
         <div class="solution-header">
             <h2>YOUR BEST SOLUTION</h2>
         </div>
-
+        
         <div class="solution-container">
             <div class="button-solution">
             <a
@@ -255,95 +274,119 @@
             </div>
         </div>
         </section>
-        <!-- YOUR BEST SOLUTION -->
+        <!-- YOUR BEST SOLUTION SECTION -->
 
         <!-- BRAND SECTION -->
         <section class="brand-section">
         <div class="container">
             <h2 class="brand-title">OUR AUTHORIZED BRAND PARTNERS</h2>
+
             <div class="slider-wrapper">
-            <button class="prev">&#10094;</button>
-            <div class="card-list">
-                <div class="card-item">
+            <button class="prev" aria-label="Scroll left" type="button">
+                &#10094;
+            </button>
+
+            <div class="card-list" data-step="240" role="list">
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand1.webp"
                     alt="brand1"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandzccc.ct" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand2.webp"
                     alt="brand2"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandtlbc" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand3.webp"
                     alt="brand3"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandufs" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand4.webp"
                     alt="brand4"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandnuieropa" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand5.webp"
                     alt="brand5"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandpagnoni" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand6.webp"
                     alt="brand6"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandreinshaw" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand7.webp"
                     alt="brand7"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandinaken" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand8.webp"
                     alt="brand8"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandschussler" class="btn-brand">View Products</a>
                 </div>
-                <div class="card-item">
+
+                <div class="card-item" role="listitem">
                 <img
                     src="./assets/image/brand/brand9.webp"
                     alt="brand9"
                     class="logo-brand"
+                    loading="lazy"
                 />
                 <a href="#brandservvo" class="btn-brand">View Products</a>
                 </div>
             </div>
-            <button class="next">&#10095;</button>
+
+            <button class="next" aria-label="Scroll right" type="button">
+                &#10095;
+            </button>
             </div>
         </div>
         </section>
-        <!-- BRAND SECTION -->
+        <!-- /BRAND SECTION -->
 
-
+        
         <!-- TRUSTED SECTION -->
 
         <section class="about-company">
@@ -388,8 +431,7 @@
         <!-- TRUSTED SECTION -->
 
 
-
-        <!-- COSTUMER SECTION -->
+        <!-- OUR VALUED PARTNER SECTION -->
         <section class="costumer-section">
         <div class="costumer-container">
             <h2 class="costumer-title">OUR VALUED PARTNERS</h2>
@@ -504,14 +546,14 @@
             </div>
         </div>
         </section>
-        <!-- COSTUMER SECTION -->
+        <!-- OUR VALUED PARTNER SECTION -->
 
 
 
         <!-- LOCATION -->
 
         <section class="office-section">
-        <div class="container-location">
+        <div class="container">
             <h2 class="location-title">OUR OFFICE IS LOCATED AT</h2>
             <div class="office-list">
             
@@ -666,3 +708,6 @@
     </div>
 </footer>
     </html>
+
+
+        
