@@ -95,7 +95,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, .45);
+    background: rgba(0, 0, 0, 0.301);
     z-index: 1;
 }
 
@@ -184,6 +184,9 @@ header svg {
 
 
 /* NAVBAR */
+body{
+    background-color: #F6FEFF ;
+}
 
 /* WE SPECIALIZE IN SECTION */
 
@@ -397,7 +400,7 @@ header svg {
     gap: 12px;
     font-size: 20px;
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    color: #666;
+    color: #666666;
     margin: 0 0 16px;
 }
 
@@ -506,8 +509,8 @@ header svg {
     height: 42px;
     border: none;
     border-radius: 50%;
-    background-color: #005baa;
-    color: #fff;
+    background-color: #666664;
+    color: white;
     font-size: 22px;
     line-height: 42px;
     text-align: center;
@@ -518,7 +521,7 @@ header svg {
 
 .prev:hover,
 .next:hover {
-    background: #003f73;
+    background: #66666657;
 }
 
 .prev:active,
@@ -623,12 +626,12 @@ header svg {
 
     .stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.997);
     }
 
     .stat-card i {
     font-size: 36px;
-    color: #666666;
+    color: #262626;
     margin-bottom: 15px;
     }
 
@@ -688,13 +691,13 @@ header svg {
     .counter {
     font-size: 32px;
     font-weight: 700;
-    color: #333;
+    color: #262626;
     margin-bottom: 5px;
     }
 
 
     .company-description p {
-    color: #555;
+    color: black;
     line-height: 1.6;
     margin-bottom: 10px;
     text-align: center;

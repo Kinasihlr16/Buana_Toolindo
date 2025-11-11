@@ -72,7 +72,7 @@
                     <a class="nav-link active" aria-current="page" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">ABOUT US</a>
+                    <a class="nav-link" href="./aboutus.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#products">PRODUCTS</a>
@@ -127,13 +127,12 @@
                     <!-- Button pertama -->
                     <a href="#products" class="btn-products">Explore Products</a>
                     <!-- Button kedua -->
-                    <a href="#contact" class="btn-contact">Contact Sales</a>
+                    <a href="#contact" class="btn-contact">Sales Contact</a>
                     </div>
                 </div>
                 </div>
             </div>
             </section>
-            <!-- SPECIALIZE SECTION -->
 
         <!-- NAVBAR -->
         </header>
@@ -622,6 +621,21 @@
 
         <script src="./dist/js/script.js"></script>
 
+
+        <!-- NAVLINK -->
+        <script>
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                // Hapus kelas 'active' dari semua nav-link
+                navLinks.forEach(item => item.classList.remove('active'));
+                // Tambahkan 'active' ke link yang diklik
+                this.classList.add('active');
+            });
+        });
+        </script>
+
         <!-- pooper JS Tooltips -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
         
@@ -688,7 +702,7 @@
                 <li><i class="fa-brands fa-whatsapp"></i> +62 857-1568-0305</li> <br>
                 <li><i class="fa-solid fa-fax"></i> +62 21 2225 0015</li> <br>
                 <li><i class="fa-solid fa-square-phone"></i> +62 21 2225 0018 – 20</li> <br>
-                <li><i class="fa-solid fa-envelope"></i> Buanaarta@gmail.com5</li> <br>
+                <li><i class="fa-solid fa-envelope"></i> Buanaarta@gmail.com</li> <br>
 
             </ul>
         </div>
