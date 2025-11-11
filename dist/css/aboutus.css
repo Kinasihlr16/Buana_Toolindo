@@ -402,6 +402,7 @@ body{
 .teams {
     margin-top: 30px;
     padding-bottom: 100px;
+
 }
 
 .team-container {
@@ -491,6 +492,10 @@ body{
 }
     /* Jarak antara teks dan garis */
 
+
+@media (max-width: 1200px) {
+    card
+}
  /* MEET OUR TEAMS SECTION */
 
 /* FOOTER */
@@ -508,8 +513,6 @@ footer {
     padding: 0 20px 40px; /* Padding kiri, kanan, dan bawah */
     border-bottom: 1px solid #ccc; /* Garis pemisah tipis di bawah kolom atas */
 }
-
-
 
 .footer-col {
     /* Alokasi lebar untuk setiap kolom. Kolom 1 lebih lebar. */
