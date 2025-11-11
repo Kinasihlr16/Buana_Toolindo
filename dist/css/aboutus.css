@@ -106,7 +106,11 @@ a {
     text-decoration: 2px;
     border: 2px;
     border-radius: 8px;
-    color: #4A4646;
+}
+
+.btn-homepage a{
+    font-size: 17px;
+    color: #262626;;
 }
 
 .second-hero-aboutus {
@@ -453,6 +457,11 @@ body{
     color: #4A4646;
     align-content: center;
     margin-left: 480px;
+}
+
+.btn-company-updates a{
+    font-size: 17px;
+    color: #262626;;
 }
 
 .teams h2{
