@@ -492,10 +492,6 @@ body{
 }
     /* Jarak antara teks dan garis */
 
-
-@media (max-width: 1200px) {
-    card
-}
  /* MEET OUR TEAMS SECTION */
 
 /* FOOTER */
@@ -584,4 +580,4 @@ footer {
     font-style: bold;
 }
 
-/* FOOTER */
+/* FOOTER */ 
