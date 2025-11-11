@@ -121,7 +121,7 @@ body{
 /* PRODUCTS ZCC.CT */
 .product-section {
     background-color: #f8fdff;
-    padding: 100px 0;
+    padding: 10px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -130,8 +130,8 @@ body{
     font-weight: bold;
     font-size: 22px;
     text-align: left;
-    margin-left: 150px;
-    padding-top: 50px;
+    margin-left: 155px;
+    padding-top: 150px;
 }
 
 .product-header h3 {
@@ -139,13 +139,6 @@ body{
     font-weight: 600;
     color: #555;
     margin-bottom: 10px;
-}
-
-.product-header .line {
-    width: 100px;
-    height: 2px;
-    background: #ccc;
-    margin: 0 auto 30px;
 }
 
 .product-header .description {
@@ -160,30 +153,29 @@ body{
 .product-header .description img {
     width: 300px;
     height: auto;
+    padding-top: 0;
 }
 
 .product-header .description p {
     color: #333;
     font-size: 14px;
     line-height: 1.6;
-    text-align: left;
+    text-align: justify;
 }
 
-/* Grid untuk produk */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* baris pertama 4 kolom */
-    gap: 20px;
-    justify-content: center;
+.list-zcc{
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    padding-top: 5px;
 }
 
-.product-grid img {
-    width: 100%;
-    max-width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.text-description h7{
+    padding-top: 15px;
+    font-size: 16px;
+    font-style: bold;
 }
-
 .product-section h3{
     font-size: 20px;
     font-family: "Montserrat";
@@ -221,6 +213,62 @@ body{
 }
     /* Jarak antara teks dan garis */
 
+/*PRODUCTS SECTION  */
+.product {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #F6FEFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.cards h2{
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Montserrat";
+    color: #666666;
+}
+
+.btn-catalog{
+    padding: 8px;
+}
+
+.btn-catalog{
+    position: absolute;
+    left: 100px;
+    text-decoration: 2px;
+    border: 2px;
+    border-radius: 8px;
+    color: #4A4646;
+    margin-left: 150px;
+}
+
+.btn-catalog a{
+    font-size: 17px;
+    color: #262626;;
+}
+
+
+/*PRODUCTS SECTION  */
 
 /* Responsif */
 @media (max-width: 992px) {

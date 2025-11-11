@@ -343,15 +343,6 @@ body{
     justify-content: space-between;
 }
 
-/* Gaya untuk Ikon */
-.box i {
-    font-size: 3em;
-    color: #262626;
-    /* Warna ikon, sesuaikan! */
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 /* Gaya untuk Judul di Kotak */
 .box h3 {
     font-size: 16px;
