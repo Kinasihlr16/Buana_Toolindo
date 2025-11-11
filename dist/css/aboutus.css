@@ -163,14 +163,6 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-left: 250px;
     border: 2px solid rgba(0, 0, 0, 0.331);
-    padding-left: 10px;
-}
-
-.vision-card img{
-    width: 35%;
-    height: auto;
-    margin-left: 40px;
-    padding-top: 0;
 }
 
 .vision-card p{
@@ -229,8 +221,8 @@ body{
 /* OUR MISSION SECTION */
 
 .mission-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 .mission-card {
@@ -244,23 +236,19 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-left: 120px;
     border: 2px solid rgba(0, 0, 0, 0.331);
-    padding: 0;
-}
-
-.mission-card img{
-    width: 15%;
-    height: auto;
-    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 0  ;
 }
 
 .mission-card p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px;
     font-weight: 500px;
     color: black;
     padding-top: 0;
-    padding: 5px;
+    justify-content: center;
 }
 
 .mission-desc {
@@ -321,7 +309,7 @@ body{
  /* OUR DEPARTMENTS SECTION */
 .departments-section {
     background-color: #F6FEFF;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .four-col{
