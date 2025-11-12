@@ -159,11 +159,12 @@ body{
     gap: 40px;
     margin: 0 auto 60px;
     max-width: 900px;
+    flex-direction: column;
 }
 
 .product-header .description img {
-    width: 300px;
-    height: auto;
+    width: 20%;
+    height: 20%;
     padding-top: 0;
 }
 

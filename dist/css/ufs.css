@@ -118,7 +118,7 @@ body{
     background-color: #F6FEFF;
 }
 
-/* PRODUCTS LBC */
+/* PRODUCTS UFS */
 .product-section {
     background-color: #f8fdff;
     padding: 10px 0;
@@ -153,7 +153,7 @@ body{
 }
 
 .product-header .description {
-    display: flex;
+    display:flex ;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -174,7 +174,7 @@ body{
     text-align: justify;
 }
 
-.list-lbc{
+.list-ufs{
     font-size: 14px;
     line-height: 1.6;
     text-align: justify;
