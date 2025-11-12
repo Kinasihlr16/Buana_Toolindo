@@ -127,7 +127,6 @@ body{
 }
 
 .product-header h2 {
-    font-weight: bold;
     font-size: 22px;
     text-align: left;
     margin-left: 155px;
@@ -137,8 +136,20 @@ body{
 .product-header h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #555;
     margin-bottom: 10px;
+}
+
+.product-header p{
+    font-weight: 200px;
+
+}
+
+.product-header .second{
+    font-size: 16px;
+    padding-top: 0px;
+    padding: 1px 240px;
+    font-weight: 0px;
+    text-align: center;
 }
 
 .product-header .description {
@@ -157,25 +168,18 @@ body{
 }
 
 .product-header .description p {
-    color: #333;
     font-size: 14px;
     line-height: 1.6;
     text-align: justify;
 }
 
 .list-zcc{
-    color: #333;
     font-size: 14px;
     line-height: 1.6;
     text-align: justify;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
-.text-description h7{
-    padding-top: 15px;
-    font-size: 16px;
-    font-style: bold;
-}
 .product-section h3{
     font-size: 20px;
     font-family: "Montserrat";
@@ -216,55 +220,108 @@ body{
 /*PRODUCTS SECTION  */
 .product {
     text-align: center;
-    padding: 80px 0;
+    padding: 20px 0;
     background-color: #F6FEFF;
     font-family: 'Poppins', sans-serif;
 }
 
 .product h2 {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .product-row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.product-row2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
+.cards{
+    width: 220px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* susun isi card ke bawah */
+    justify-content: space-between;
+}
+
 .cards img {
     max-width: 100%;
-    max-height: 280px;
+    max-height: 700px;
     object-fit: contain;
 }
 
 .cards h2{
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 10px;
-    font-family: "Montserrat";
-    color: #666666;
+    margin: 5px 0;
+    color: #262626;
 }
 
-.btn-catalog{
-    padding: 8px;
-}
 
-.btn-catalog{
-    position: absolute;
-    left: 100px;
-    text-decoration: 2px;
-    border: 2px;
+.btn-catalog {
+    background-color: #d9d9d9;
+    color: #262626;
+    text-decoration: none;
+    padding: 8px 16px;
     border-radius: 8px;
-    color: #4A4646;
-    margin-left: 150px;
+    display: inline-block;
+    transition: 0.3s;
+    margin-top: 10px; /* dorong ke bawah */
+}
+
+.btn-catalog:hover {
+    background-color: #828282;
+    color: white;
 }
 
 .btn-catalog a{
-    font-size: 17px;
-    color: #262626;;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px solid black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #f0f0f0;
+    color: #262626;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #828282;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #828282;
+    color: white;
 }
 
 
@@ -286,3 +343,93 @@ body{
     grid-template-columns: repeat(2, 1fr); /* HP: 2 kolom */
     }
 }
+
+
+
+/* FOOTER */
+footer {
+    background-color: #E4DFDF; 
+    padding: 70px 0 0px; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer-top-section {
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: space-between; /* Memberikan jarak yang merata */
+    max-width: 1200px; /* Batasi lebar agar konten tidak terlalu melebar */
+    margin: 0 auto; /* Tengah-kan container */
+    padding: 0 20px 40px; /* Padding kiri, kanan, dan bawah */
+    border-bottom: 1px solid #ccc; /* Garis pemisah tipis di bawah kolom atas */
+}
+
+.footer-col {
+    /* Alokasi lebar untuk setiap kolom. Kolom 1 lebih lebar. */
+    flex: 1; 
+    margin: 0 50px;
+}
+
+.branding-col {
+    flex: 1.5; /* Memberikan lebar yang lebih besar untuk kolom logo/deskripsi */
+}
+
+.contact-col, .social-col {
+    flex: 1; /* Lebar yang sama untuk kolom 2 dan 3 */
+}
+
+.contact-col i{
+    margin-right: 12px;
+}
+
+.contact-col li span{
+    font-weight: 800;
+}
+
+.contact-col .fa-whatsapp{
+    font-weight: 800;
+}
+
+.social-col .fa-instagram{
+    font-weight: 800;
+}
+.footer-col .gambar1{
+    padding-bottom: 30px;
+}
+
+.footer-col .gambar2{
+    padding-bottom: 10px;
+}
+
+.footer-col p{
+    font-size: 14px;
+    color: #262626;
+    padding-top: 20px;
+}
+
+.footer-col h2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #333; /* Warna gelap */
+}
+
+.footer-col ul {
+    list-style: none; /* Hilangkan bullet point */
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer-bottom-section {
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626; /* Warna teks hak cipta */
+    font-style: bold;
+}
+
+/* FOOTER */ 
