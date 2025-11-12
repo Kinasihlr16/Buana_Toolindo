@@ -118,54 +118,70 @@ body{
     background-color: #F6FEFF;
 }
 
-/* CHOOSE BRANDS */
-.brands {
+/* PRODUCTS UFS */
+.product-section {
+    background-color: #f8fdff;
+    padding: 10px 0;
     text-align: center;
-    padding: 80px 0;
-    background-color: #F6FEFF;
     font-family: 'Poppins', sans-serif;
 }
 
-.brands h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
-    position: relative;
+.product-header h2 {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 155px;
+    padding-top: 150px;
 }
 
-.brand-row {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+.product-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.brand-card {
-    display: flex;
+.product-header p{
+    font-weight: 200px;
+
+}
+
+.product-header .second{
+    font-size: 16px;
+    padding-top: 0px;
+    padding: 1px 240px;
+    font-weight: 0px;
+    text-align: center;
+}
+
+.product-header .description {
+    display:flex ;
     justify-content: center;
     align-items: center;
-    background: #fff;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    width: 180px;
-    height: 120px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+    margin: 0 auto 60px;
+    max-width: 900px;
+    flex-direction: column;
 }
 
-.brand-card:hover {
-    transform: translateY(-5px);
-    border-color: #4A4644;
-    box-shadow: 0 6px 16px #F6FEFF;
+.product-header .description img {
+    width: 20%;
+    height: 20%;
+    padding-top: 0;
 }
 
-.brand-card img {
-    max-width: 100%;
-    max-height: 80px;
-    object-fit: contain;
+.product-header .description p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-.brands h2{
+.list-ufs{
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.product-section h3{
     font-size: 20px;
     font-family: "Montserrat";
     color: #666666;
@@ -177,7 +193,7 @@ body{
     margin: 0;
 }
 
-.brands h2::before {
+.product-section h3::before {
     content: "";
     display: block;
     width: 600px;
@@ -191,7 +207,7 @@ body{
 }
 
 /* Garis Kanan (Menggunakan Pseudo-element ::after) */
-.brands h2::after {
+.product-section h3::after {
     content: "";
     display: block;
     width: 600px;
@@ -202,13 +218,101 @@ body{
 }
     /* Jarak antara teks dan garis */
 
-/* CHOOSE BRANDS */
+/*PRODUCTS SECTION  */
+.product {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F6FEFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 220px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* susun isi card ke bawah */
+    justify-content: space-between;
+}
+
+.cards img {
+    max-width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+.cards h2{
+    font-size: 14px;
+    padding-top: 10px;
+    margin: 5px 0;
+    color: #262626;
+}
+
+
+.btn-catalog {
+    background-color: #d9d9d9;
+    color: #262626;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+    margin-top: 10px; /* dorong ke bawah */
+}
+
+.btn-catalog:hover {
+    background-color: #828282;
+    color: white;
+}
+
+.btn-catalog a{
+    font-size: 14px;
+    color: white;
+    border-radius: 5px solid black;
+}
+
+/*PRODUCTS SECTION  */
+
+/* Responsif */
+@media (max-width: 992px) {
+    .product-header .description {
+    flex-direction: column;
+    text-align: center;
+}
+    .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* tablet: 3 kolom */
+}
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* HP: 2 kolom */
+    }
+}
+
 
 
 /* FOOTER */
 footer {
     background-color: #E4DFDF; 
-    padding: 40px 0 0px; 
+    padding: 70px 0 0px; 
     font-family: 'Poppins', sans-serif; 
 }
 
