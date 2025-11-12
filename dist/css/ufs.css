@@ -141,7 +141,6 @@ body{
 
 .product-header p{
     font-weight: 200px;
-
 }
 
 .product-header .second{
@@ -177,7 +176,7 @@ body{
 .list-ufs{
     font-size: 14px;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
     padding-top: 10px;
 }
 

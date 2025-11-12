@@ -171,13 +171,13 @@ body{
 .product-header .description p {
     font-size: 14px;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
 }
 
 .list-zcc{
     font-size: 14px;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
     padding-top: 10px;
 }
 
